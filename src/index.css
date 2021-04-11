@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+}
+body{
+  font-family: 'Roboto';
+  padding: 20px;
+  background-color:#ffff;
+}
+.filter{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.filter .form-control {
+  width: 100%;
+}
+
+.filter .form-control input {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding:8px ;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8D8D8D;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin:  0 0 30px;
+  
+ 
+}
+
+.filter .region-filter{
+  
+  width: 100%;
+  
+}
+
+.filter .region-filter .select{
+  align-items: center;
+  width: 316px;
+  height: 41.01px;
+  left: 176px;
+  top: 218px;
+  outline: none;
+  border: none;
+  color: #8D8D8D;
+  
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width:640px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px){
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px){
+  .grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
